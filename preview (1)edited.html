@@ -1,0 +1,2483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prabhjot Kaur | Payroll & Accounting Professional</title>
+<meta name="description" content="The professional portfolio of Prabhjot Kaur, featuring payroll administration, accounting, reporting, reconciliation and process-improvement work.">
+
+<style>
+:root{
+  --green-950:#032b24;
+  --green-900:#063a30;
+  --green-800:#0b5546;
+  --green-100:#e9f2ee;
+  --gold:#c89b32;
+  --gold-soft:#ead39a;
+  --ivory:#fbf8f0;
+  --cream:#f3ecdf;
+  --white:#fff;
+  --ink:#17322c;
+  --muted:#64726d;
+  --line:#e3dbc9;
+  --red:#c84d43;
+  --orange:#df7e2b;
+  --shadow:0 18px 45px rgba(20,48,41,.12);
+}
+
+*{
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  color:var(--ink);
+  background:var(--ivory);
+  font-family:Inter,Segoe UI,Arial,sans-serif;
+}
+
+body.modal-open{
+  overflow:hidden;
+}
+
+button,
+input{
+  font:inherit;
+}
+
+button{
+  cursor:pointer;
+}
+
+a{
+  color:inherit;
+}
+
+img{
+  display:block;
+  max-width:100%;
+}
+
+.nav{
+  position:sticky;
+  top:0;
+  z-index:100;
+  min-height:76px;
+  padding:10px 7%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  color:white;
+  background:rgba(3,43,36,.97);
+  border-bottom:1px solid rgba(200,155,50,.45);
+  backdrop-filter:blur(10px);
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:13px;
+}
+
+.pk-logo{
+  width:55px;
+  height:55px;
+  display:grid;
+  place-items:center;
+  position:relative;
+  border:2px solid var(--gold);
+  border-radius:50%;
+  color:var(--gold);
+  font:700 24px Georgia,serif;
+}
+
+.pk-logo::after{
+  content:"";
+  position:absolute;
+  inset:5px;
+  border:1px solid rgba(200,155,50,.65);
+  border-radius:50%;
+}
+
+.brand-name{
+  font:700 17px Georgia,serif;
+}
+
+.brand-subtitle{
+  margin-top:3px;
+  color:var(--gold-soft);
+  font-size:10px;
+  letter-spacing:1.4px;
+  text-transform:uppercase;
+}
+
+.nav-links{
+  display:flex;
+  gap:23px;
+  align-items:center;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:800;
+}
+
+.nav-links a:hover{
+  color:var(--gold-soft);
+}
+
+.nav-connect{
+  padding:10px 17px;
+  border:1px solid var(--gold);
+  border-radius:8px;
+}
+
+.hero{
+  min-height:690px;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  align-items:center;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 74% 18%,rgba(200,155,50,.20),transparent 31%),
+    linear-gradient(126deg,var(--green-950) 0 55%,#e7dfd1 55%);
+}
+
+.hero-copy{
+  padding:90px 7%;
+  color:white;
+}
+
+.hello{
+  margin:0 0 9px;
+  color:var(--gold);
+  font:italic 28px Georgia,serif;
+}
+
+.hero h1{
+  margin:0;
+  font:700 clamp(54px,7vw,88px)/.98 Georgia,serif;
+}
+
+.hero-role{
+  margin:24px 0;
+  color:var(--gold-soft);
+  font-weight:900;
+  letter-spacing:1.35px;
+  line-height:1.6;
+  text-transform:uppercase;
+}
+
+.hero-intro{
+  max-width:650px;
+  color:#e9f3ef;
+  font-size:18px;
+  line-height:1.75;
+}
+
+.hero-actions{
+  margin-top:30px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:13px;
+}
+
+.btn{
+  min-height:48px;
+  padding:0 22px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  border:1px solid transparent;
+  border-radius:9px;
+  text-decoration:none;
+  font-weight:900;
+  transition:.25s ease;
+}
+
+.btn-primary{
+  color:var(--green-950);
+  background:var(--gold);
+}
+
+.btn-primary:hover{
+  transform:translateY(-2px);
+  background:#ddb64d;
+}
+
+.btn-outline{
+  color:white;
+  border-color:var(--gold);
+  background:rgba(255,255,255,.04);
+}
+
+.btn-outline:hover{
+  background:rgba(200,155,50,.14);
+}
+
+.hero-visual{
+  min-height:690px;
+  padding:70px 6%;
+  display:grid;
+  place-items:center;
+}
+
+.desk-scene{
+  width:min(620px,100%);
+  padding:29px;
+  border-radius:28px;
+  background:rgba(255,255,255,.78);
+  box-shadow:0 35px 80px rgba(0,0,0,.22);
+  transform:rotate(-1deg);
+}
+
+.laptop{
+  border:12px solid #252e2b;
+  border-bottom-width:25px;
+  border-radius:18px 18px 10px 10px;
+  background:white;
+  box-shadow:0 24px 32px rgba(0,0,0,.20);
+}
+
+.laptop-screen{
+  min-height:330px;
+  padding:16px;
+  background:#f3f7f5;
+}
+
+.browser-bar{
+  height:28px;
+  margin:-16px -16px 14px;
+  padding:8px 12px;
+  color:white;
+  background:var(--green-900);
+  font-size:10px;
+  letter-spacing:1px;
+}
+
+.mini-kpis{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:8px;
+}
+
+.mini-kpi{
+  padding:10px;
+  border:1px solid #dbe5e1;
+  border-radius:8px;
+  background:white;
+}
+
+.mini-kpi strong{
+  display:block;
+  color:var(--green-800);
+  font-size:15px;
+}
+
+.mini-kpi span{
+  color:var(--muted);
+  font-size:8px;
+}
+
+.mini-dashboard{
+  margin-top:12px;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:12px;
+}
+
+.fake-chart,
+.fake-donut{
+  min-height:190px;
+  padding:16px;
+  border:1px solid #dbe5e1;
+  border-radius:10px;
+  background:white;
+}
+
+.hero-bars{
+  height:135px;
+  margin-top:15px;
+  display:flex;
+  align-items:flex-end;
+  gap:8px;
+}
+
+.hero-bars i{
+  flex:1;
+  display:block;
+  border-radius:4px 4px 0 0;
+  background:linear-gradient(var(--green-800),var(--green-950));
+}
+
+.hero-bars i:nth-child(1){height:34%}
+.hero-bars i:nth-child(2){height:57%}
+.hero-bars i:nth-child(3){height:49%}
+.hero-bars i:nth-child(4){height:79%}
+.hero-bars i:nth-child(5){height:68%}
+.hero-bars i:nth-child(6){height:92%}
+
+.donut{
+  width:125px;
+  height:125px;
+  margin:23px auto;
+  position:relative;
+  border-radius:50%;
+  background:conic-gradient(var(--green-800) 0 78%,var(--orange) 78%);
+}
+
+.donut::after{
+  content:"78%";
+  position:absolute;
+  inset:25px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  color:var(--green-900);
+  background:white;
+  font-weight:900;
+}
+
+.stats-strip{
+  width:min(1100px,86%);
+  margin:-55px auto 50px;
+  padding:18px;
+  position:relative;
+  z-index:4;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  border-radius:17px;
+  background:white;
+  box-shadow:var(--shadow);
+}
+
+.stat{
+  padding:18px 24px;
+  text-align:center;
+  border-right:1px solid var(--line);
+}
+
+.stat:last-child{
+  border-right:0;
+}
+
+.stat strong{
+  display:block;
+  color:var(--green-900);
+  font:700 34px Georgia,serif;
+}
+
+.stat span{
+  color:var(--muted);
+  font-size:13px;
+}
+
+.section{
+  padding:90px 7%;
+}
+
+.section-soft{
+  background:#f4eee3;
+}
+
+.section-dark{
+  color:white;
+  background:linear-gradient(135deg,var(--green-950),var(--green-800));
+}
+
+.section-heading{
+  max-width:830px;
+  margin:0 auto 43px;
+  text-align:center;
+}
+
+.eyebrow{
+  margin-bottom:8px;
+  color:var(--gold);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.section-heading h2{
+  margin:0;
+  color:var(--green-950);
+  font:700 clamp(36px,4.5vw,58px)/1.1 Georgia,serif;
+}
+
+.section-dark .section-heading h2{
+  color:white;
+}
+
+.section-heading p{
+  margin:14px auto 0;
+  color:var(--muted);
+  line-height:1.7;
+}
+
+.section-dark .section-heading p{
+  color:#dce9e5;
+}
+
+.about-grid{
+  max-width:1180px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:.82fr 1.18fr;
+  gap:55px;
+  align-items:center;
+}
+
+.portrait-shell{
+  padding:13px;
+  border:2px solid var(--gold);
+  border-radius:28px;
+  background:var(--green-950);
+  box-shadow:var(--shadow);
+}
+
+.portrait-stage{
+  min-height:480px;
+  position:relative;
+  overflow:hidden;
+  display:grid;
+  place-items:center;
+  border-radius:18px;
+  background:
+    radial-gradient(circle at 50% 25%,rgba(200,155,50,.26),transparent 31%),
+    linear-gradient(135deg,#0b6654,#032b24);
+}
+
+.portrait-stage img{
+  width:100%;
+  height:480px;
+  display:none;
+  object-fit:cover;
+  object-position:center 20%;
+}
+
+.portrait-stage.has-image img{
+  display:block;
+}
+
+.portrait-placeholder{
+  max-width:270px;
+  padding:25px;
+  color:white;
+  text-align:center;
+}
+
+.portrait-stage.has-image .portrait-placeholder{
+  display:none;
+}
+
+.portrait-placeholder .pk-logo{
+  width:90px;
+  height:90px;
+  margin:0 auto 20px;
+  font-size:38px;
+}
+
+.upload-row{
+  margin-top:13px;
+  display:flex;
+  justify-content:center;
+  gap:9px;
+}
+
+.upload-button,
+.remove-button{
+  min-height:40px;
+  padding:0 14px;
+  border-radius:8px;
+  font-size:12px;
+  font-weight:900;
+}
+
+.upload-button{
+  border:0;
+  color:var(--green-950);
+  background:var(--gold);
+}
+
+.remove-button{
+  color:white;
+  border:1px solid rgba(255,255,255,.35);
+  background:transparent;
+}
+
+.about-copy h2{
+  margin:7px 0 18px;
+  color:var(--green-950);
+  font:700 47px Georgia,serif;
+}
+
+.about-copy p{
+  line-height:1.75;
+}
+
+.quote{
+  margin:24px 0;
+  padding:22px;
+  color:var(--green-900);
+  border-left:5px solid var(--gold);
+  background:#f4eee3;
+  font:italic 19px/1.55 Georgia,serif;
+}
+
+.check-list{
+  display:grid;
+  gap:13px;
+  margin-top:20px;
+}
+
+.check-item{
+  display:flex;
+  gap:11px;
+  align-items:flex-start;
+}
+
+.check{
+  width:22px;
+  height:22px;
+  flex:0 0 22px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  color:white;
+  background:var(--green-800);
+  font-size:12px;
+}
+
+.values{
+  margin-top:23px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.value-pill{
+  padding:9px 14px;
+  border-radius:999px;
+  background:#f0eadf;
+  font-size:12px;
+  font-weight:900;
+}
+
+.journey{
+  max-width:1000px;
+  margin:auto;
+  position:relative;
+}
+
+.journey::before{
+  content:"";
+  position:absolute;
+  left:101px;
+  top:15px;
+  bottom:15px;
+  width:2px;
+  background:linear-gradient(var(--gold),var(--green-800));
+}
+
+.timeline-item{
+  margin-bottom:28px;
+  display:grid;
+  grid-template-columns:80px 1fr;
+  gap:41px;
+  position:relative;
+}
+
+.timeline-year{
+  padding-top:24px;
+  color:var(--gold);
+  font-weight:900;
+  text-align:right;
+}
+
+.timeline-card{
+  padding:26px 30px;
+  position:relative;
+  border-radius:18px;
+  background:white;
+  box-shadow:var(--shadow);
+}
+
+.timeline-card::before{
+  content:"";
+  width:14px;
+  height:14px;
+  position:absolute;
+  left:-29px;
+  top:31px;
+  border:4px solid var(--gold);
+  border-radius:50%;
+  background:var(--green-900);
+}
+
+.timeline-card h3{
+  margin:0 0 7px;
+  color:var(--green-900);
+  font:700 22px Georgia,serif;
+}
+
+.timeline-card p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.65;
+}
+
+.skills-grid,
+.tools-grid{
+  max-width:1180px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.skill-card,
+.tool-card{
+  padding:25px;
+  border-radius:20px;
+  background:white;
+  box-shadow:var(--shadow);
+}
+
+.skill-card{
+  min-height:185px;
+  border-bottom:4px solid var(--gold);
+}
+
+.skill-icon,
+.tool-icon{
+  width:45px;
+  height:45px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  color:var(--gold);
+  background:var(--green-900);
+  font-size:20px;
+  font-weight:900;
+}
+
+.skill-card h3,
+.tool-card h3{
+  margin:18px 0 10px;
+  color:var(--green-900);
+}
+
+.skill-card p,
+.tool-card p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.6;
+}
+
+.tool-card ul{
+  margin:14px 0 0;
+  padding-left:18px;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.8;
+}
+
+.tool-card li::marker{
+  color:var(--gold);
+}
+
+.level{
+  margin-top:16px;
+  display:inline-block;
+  padding:6px 9px;
+  border-radius:999px;
+  color:var(--green-800);
+  background:var(--green-100);
+  font-size:10px;
+  font-weight:900;
+  text-transform:uppercase;
+}
+
+.project-grid{
+  max-width:1180px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.project-card{
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:20px;
+  background:white;
+  box-shadow:var(--shadow);
+  transition:.3s ease;
+}
+
+.project-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 25px 55px rgba(20,48,41,.17);
+}
+
+.project-preview{
+  height:240px;
+  padding:14px;
+  background:#edf3f0;
+}
+
+.project-preview-inner{
+  height:100%;
+  padding:10px;
+  border:1px solid #cedbd5;
+  border-radius:10px;
+  background:white;
+}
+
+.project-kpis{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:5px;
+}
+
+.project-kpi{
+  padding:8px;
+  border-radius:5px;
+  color:white;
+  background:var(--green-800);
+  font-size:8px;
+}
+
+.preview-bars{
+  height:120px;
+  margin-top:10px;
+  padding:15px;
+  display:flex;
+  align-items:flex-end;
+  gap:8px;
+  background:#f6f8f7;
+}
+
+.preview-bars i{
+  flex:1;
+  display:block;
+  background:linear-gradient(var(--green-800),var(--green-950));
+}
+
+.preview-bars i:nth-child(1){height:45%}
+.preview-bars i:nth-child(2){height:68%}
+.preview-bars i:nth-child(3){height:53%}
+.preview-bars i:nth-child(4){height:83%}
+.preview-bars i:nth-child(5){height:72%}
+.preview-bars i:nth-child(6){height:94%}
+
+.preview-table{
+  width:100%;
+  margin-top:8px;
+  border-collapse:collapse;
+  font-size:7px;
+}
+
+.preview-table th{
+  padding:6px;
+  color:white;
+  background:var(--green-900);
+}
+
+.preview-table td{
+  padding:6px;
+  border-bottom:1px solid #ddd;
+}
+
+.status{
+  padding:2px 5px;
+  border-radius:4px;
+  font-weight:900;
+}
+
+.status.high{
+  color:#8b1d18;
+  background:#ffd8d4;
+}
+
+.status.done{
+  color:#16623d;
+  background:#d8f2e5;
+}
+
+.recon-grid{
+  margin-top:8px;
+  display:grid;
+  grid-template-columns:1.4fr .6fr;
+  gap:8px;
+}
+
+.recon-table{
+  padding:8px;
+  background:#f7faf8;
+}
+
+.recon-line{
+  padding:6px 4px;
+  display:flex;
+  justify-content:space-between;
+  border-bottom:1px solid #d9e2de;
+  font-size:8px;
+}
+
+.recon-score{
+  display:grid;
+  place-items:center;
+  border-radius:8px;
+  color:white;
+  background:var(--green-800);
+  text-align:center;
+}
+
+.recon-score strong{
+  font-size:25px;
+}
+
+.project-body{
+  padding:24px;
+}
+
+.project-body h3{
+  margin:0 0 10px;
+  color:var(--green-900);
+  font:700 24px/1.15 Georgia,serif;
+}
+
+.project-body p{
+  min-height:72px;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.6;
+}
+
+.tags{
+  margin:18px 0;
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+}
+
+.tag{
+  padding:6px 9px;
+  border-radius:999px;
+  color:var(--green-800);
+  background:var(--green-100);
+  font-size:11px;
+  font-weight:900;
+}
+
+.project-open{
+  width:100%;
+  min-height:44px;
+  border:0;
+  border-radius:8px;
+  color:white;
+  background:var(--green-900);
+  font-weight:900;
+}
+
+.project-open:hover{
+  background:var(--green-800);
+}
+
+.privacy-note{
+  max-width:900px;
+  margin:34px auto 0;
+  padding:15px 20px;
+  border-left:4px solid var(--gold);
+  color:var(--muted);
+  background:white;
+  font-size:13px;
+  line-height:1.6;
+}
+
+.credentials-grid{
+  max-width:1180px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.credential-card{
+  padding:18px;
+  border-radius:20px;
+  color:var(--ink);
+  background:white;
+  box-shadow:var(--shadow);
+}
+
+.credential-image{
+  height:190px;
+  position:relative;
+  overflow:hidden;
+  display:grid;
+  place-items:center;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:
+    linear-gradient(135deg,#fff,#f1eadf);
+}
+
+.credential-image img{
+  width:100%;
+  height:100%;
+  display:none;
+  object-fit:cover;
+  object-position:center;
+}
+
+.credential-image.has-image img{
+  display:block;
+}
+
+.credential-image.has-image .credential-placeholder{
+  display:none;
+}
+
+.credential-placeholder{
+  padding:22px;
+  text-align:center;
+}
+
+.credential-mark{
+  width:63px;
+  height:63px;
+  margin:0 auto 14px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  color:var(--gold);
+  background:var(--green-900);
+  font-weight:900;
+}
+
+.credential-card h3{
+  margin:18px 0 5px;
+  color:var(--green-900);
+  font:700 21px Georgia,serif;
+}
+
+.credential-card .issuer{
+  color:var(--gold);
+  font-size:13px;
+  font-weight:900;
+}
+
+.credential-card p{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.6;
+}
+
+.credential-controls{
+  display:flex;
+  gap:8px;
+}
+
+.credential-controls button{
+  min-height:38px;
+  padding:0 12px;
+  border-radius:7px;
+  font-size:11px;
+  font-weight:900;
+}
+
+.add-preview{
+  flex:1;
+  color:white;
+  border:0;
+  background:var(--green-900);
+}
+
+.remove-preview{
+  color:var(--green-900);
+  border:1px solid var(--line);
+  background:white;
+}
+
+.education-grid{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.education-card{
+  padding:24px;
+  border-radius:22px;
+  background:white;
+  box-shadow:var(--shadow);
+}
+
+.education-preview{
+  height:245px;
+  position:relative;
+  overflow:hidden;
+  display:grid;
+  place-items:center;
+  border:2px solid var(--gold-soft);
+  background:#fffdf7;
+}
+
+.education-preview::before{
+  content:"";
+  position:absolute;
+  inset:7px;
+  z-index:0;
+  border:1px solid var(--gold-soft);
+  pointer-events:none;
+}
+
+.education-preview img{
+  width:100%;
+  height:100%;
+  display:none;
+  position:relative;
+  z-index:1;
+  object-fit:cover;
+  object-position:center;
+}
+
+.education-preview.has-image img{
+  display:block;
+}
+
+.education-preview.has-image .education-placeholder{
+  display:none;
+}
+
+.education-placeholder{
+  position:relative;
+  z-index:1;
+  padding:25px;
+  text-align:center;
+}
+
+.doc-seal{
+  width:62px;
+  height:62px;
+  margin:0 auto 16px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  color:white;
+  background:var(--green-800);
+  font:700 20px Georgia,serif;
+}
+
+.education-placeholder strong{
+  display:block;
+  color:var(--green-900);
+  font:700 18px Georgia,serif;
+}
+
+.education-placeholder small{
+  display:block;
+  margin-top:10px;
+  color:var(--muted);
+  line-height:1.5;
+}
+
+.education-card h3{
+  margin:21px 0 6px;
+  color:var(--green-900);
+  font:700 25px Georgia,serif;
+}
+
+.education-card .school{
+  color:var(--gold);
+  font-weight:900;
+}
+
+.education-card p{
+  color:var(--muted);
+  line-height:1.65;
+}
+
+.contact{
+  padding:85px 7%;
+  color:white;
+  background:
+    radial-gradient(circle at 90% 10%,rgba(200,155,50,.22),transparent 28%),
+    var(--green-950);
+}
+
+.contact-grid{
+  max-width:1060px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr .8fr;
+  gap:55px;
+  align-items:center;
+}
+
+.contact h2{
+  margin:8px 0 18px;
+  font:700 48px Georgia,serif;
+}
+
+.contact p{
+  color:#d9e8e3;
+  line-height:1.7;
+}
+
+.contact-panel{
+  padding:30px;
+  border:1px solid rgba(200,155,50,.45);
+  border-radius:18px;
+  background:rgba(255,255,255,.05);
+}
+
+.contact-link{
+  margin-top:12px;
+  padding:15px 17px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-radius:9px;
+  color:white;
+  background:rgba(255,255,255,.08);
+  text-decoration:none;
+}
+
+.contact-link:hover{
+  background:rgba(200,155,50,.18);
+}
+
+footer{
+  padding:24px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:25px;
+  color:#d7e7e2;
+  background:#021f1a;
+  font-size:12px;
+}
+
+.modal{
+  position:fixed;
+  inset:0;
+  z-index:500;
+  padding:24px;
+  display:none;
+  place-items:center;
+  background:rgba(1,22,18,.87);
+  backdrop-filter:blur(8px);
+}
+
+.modal.open{
+  display:grid;
+}
+
+.modal-dialog{
+  width:min(1100px,96vw);
+  max-height:91vh;
+  overflow:auto;
+  border-radius:22px;
+  background:var(--ivory);
+  box-shadow:0 35px 90px rgba(0,0,0,.45);
+}
+
+.modal-top{
+  position:sticky;
+  top:0;
+  z-index:2;
+  padding:18px 24px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:white;
+  background:var(--green-950);
+}
+
+.modal-top h3{
+  margin:0;
+  font:700 24px Georgia,serif;
+}
+
+.modal-close{
+  width:40px;
+  height:40px;
+  border:1px solid rgba(255,255,255,.3);
+  border-radius:50%;
+  color:white;
+  background:transparent;
+  font-size:20px;
+}
+
+.modal-content{
+  padding:30px;
+}
+
+.case-hero{
+  display:grid;
+  grid-template-columns:1.3fr .7fr;
+  gap:24px;
+}
+
+.case-sample,
+.case-block{
+  padding:20px;
+  border-radius:16px;
+  background:white;
+  box-shadow:var(--shadow);
+}
+
+.case-sidebar{
+  padding:25px;
+  border-radius:16px;
+  color:white;
+  background:var(--green-900);
+}
+
+.case-sidebar h4,
+.case-block h4{
+  margin:0 0 12px;
+  font:700 20px Georgia,serif;
+}
+
+.case-sidebar ul{
+  padding-left:18px;
+  line-height:1.8;
+}
+
+.case-grid{
+  margin-top:22px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.case-block p{
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.65;
+}
+
+.full-dashboard{
+  overflow:hidden;
+  border:1px solid #cfdad6;
+  border-radius:12px;
+  background:#f4f8f6;
+}
+
+.full-dashboard-title{
+  padding:12px 16px;
+  color:white;
+  background:var(--green-950);
+  font-weight:900;
+}
+
+.full-kpis{
+  padding:14px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+}
+
+.full-kpi{
+  padding:14px;
+  border:1px solid #dce5e1;
+  border-radius:9px;
+  background:white;
+}
+
+.full-kpi strong{
+  display:block;
+  color:var(--green-900);
+  font-size:20px;
+}
+
+.full-kpi span{
+  color:var(--muted);
+  font-size:10px;
+}
+
+.full-charts{
+  padding:0 14px 14px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.chart-panel{
+  min-height:220px;
+  padding:15px;
+  border:1px solid #dce5e1;
+  border-radius:9px;
+  background:white;
+}
+
+.chart-bars{
+  height:155px;
+  margin-top:18px;
+  display:flex;
+  align-items:flex-end;
+  gap:10px;
+}
+
+.chart-bars div{
+  flex:1;
+  background:linear-gradient(var(--green-800),var(--green-950));
+}
+
+.chart-bars div:nth-child(1){height:54%}
+.chart-bars div:nth-child(2){height:69%}
+.chart-bars div:nth-child(3){height:75%}
+.chart-bars div:nth-child(4){height:65%}
+.chart-bars div:nth-child(5){height:83%}
+.chart-bars div:nth-child(6){height:91%}
+
+.big-table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:12px;
+}
+
+.big-table th{
+  padding:11px;
+  color:white;
+  background:var(--green-900);
+  text-align:left;
+}
+
+.big-table td{
+  padding:10px;
+  border-bottom:1px solid #e0e6e3;
+}
+
+.big-table tr:nth-child(even){
+  background:#f7faf8;
+}
+
+.fade{
+  opacity:0;
+  transform:translateY(24px);
+  transition:.75s ease;
+}
+
+.fade.visible{
+  opacity:1;
+  transform:none;
+}
+
+.hidden-input{
+  display:none;
+}
+
+@media(max-width:1000px){
+  .nav-links{
+    display:none;
+  }
+
+  .hero{
+    grid-template-columns:1fr;
+    background:linear-gradient(160deg,var(--green-950) 0 60%,#e7dfd1 60%);
+  }
+
+  .hero-visual{
+    min-height:auto;
+    padding-top:0;
+  }
+
+  .about-grid,
+  .contact-grid,
+  .case-hero{
+    grid-template-columns:1fr;
+  }
+
+  .skills-grid,
+  .tools-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .project-grid,
+  .credentials-grid{
+    grid-template-columns:1fr;
+  }
+
+  .education-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:650px){
+  .hero-copy,
+  .section,
+  .contact{
+    padding-left:22px;
+    padding-right:22px;
+  }
+
+  .hero h1{
+    font-size:52px;
+  }
+
+  .stats-strip{
+    width:calc(100% - 30px);
+    grid-template-columns:1fr 1fr;
+  }
+
+  .stat{
+    border-right:0;
+    border-bottom:1px solid var(--line);
+  }
+
+  .skills-grid,
+  .tools-grid,
+  .case-grid{
+    grid-template-columns:1fr;
+  }
+
+  .timeline-item{
+    padding-left:35px;
+    grid-template-columns:1fr;
+    gap:6px;
+  }
+
+  .journey::before{
+    left:10px;
+  }
+
+  .timeline-year{
+    padding-top:0;
+    text-align:left;
+  }
+
+  .timeline-card::before{
+    left:-31px;
+  }
+
+  .full-kpis,
+  .full-charts{
+    grid-template-columns:1fr 1fr;
+  }
+
+  footer{
+    flex-direction:column;
+    text-align:center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="nav">
+  <div class="brand">
+    <div class="pk-logo">PK</div>
+    <div>
+      <div class="brand-name">PRABHJOT KAUR</div>
+      <div class="brand-subtitle">Payroll & Accounting Professional</div>
+    </div>
+  </div>
+
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#journey">Journey</a>
+    <a href="#skills">Skills</a>
+    <a href="#tools">Software</a>
+    <a href="#work">Work</a>
+    <a href="#development">Development</a>
+    <a href="#education">Education</a>
+    <a class="nav-connect" href="#contact">Connect</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-copy">
+    <p class="hello">Hello, I’m</p>
+    <h1>Prabhjot Kaur</h1>
+
+    <div class="hero-role">
+      Payroll • Accounting • Reporting • Process Improvement
+    </div>
+
+    <p class="hero-intro">
+      Detail-oriented payroll and accounting professional with experience in
+      payroll administration, financial reporting, reconciliation, documentation,
+      commission processing and operational support.
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#work">Explore My Work →</a>
+      <a class="btn btn-outline" href="#development">Professional Development</a>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="desk-scene">
+      <div class="laptop">
+        <div class="laptop-screen">
+          <div class="browser-bar">PAYROLL ANALYTICS OVERVIEW</div>
+
+          <div class="mini-kpis">
+            <div class="mini-kpi"><strong>$412K</strong><span>Total Payroll</span></div>
+            <div class="mini-kpi"><strong>154</strong><span>Employees</span></div>
+            <div class="mini-kpi"><strong>99.6%</strong><span>Accuracy</span></div>
+            <div class="mini-kpi"><strong>7</strong><span>Exceptions</span></div>
+          </div>
+
+          <div class="mini-dashboard">
+            <div class="fake-chart">
+              <strong>Monthly Payroll Trend</strong>
+              <div class="hero-bars">
+                <i></i><i></i><i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+
+            <div class="fake-donut">
+              <strong>Payroll Summary</strong>
+              <div class="donut"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="stats-strip fade">
+  <div class="stat"><strong>3</strong><span>Interactive Work Samples</span></div>
+  <div class="stat"><strong>5</strong><span>Career Stages</span></div>
+  <div class="stat"><strong>4</strong><span>Technology Categories</span></div>
+  <div class="stat"><strong>2</strong><span>Academic Credentials</span></div>
+</section>
+
+<section id="about" class="section">
+  <div class="about-grid">
+
+    <div class="portrait-shell fade">
+      <div class="portrait-stage" id="portraitStage">
+        <img id="portraitImage" alt="Portrait of Prabhjot Kaur">
+
+        <div class="portrait-placeholder">
+          <div class="pk-logo">PK</div>
+          <strong>Professional Portrait</strong>
+          <p>Select the orange-top photograph with the plain white background.</p>
+        </div>
+      </div>
+
+      <div class="upload-row">
+        <button class="upload-button" data-upload="portrait">Add Portrait</button>
+        <button class="remove-button" data-remove="portrait">Remove</button>
+      </div>
+    </div>
+
+    <div class="about-copy fade">
+      <div class="eyebrow">About Me</div>
+      <h2>A Commitment to Excellence</h2>
+
+      <p>
+        I bring a strong foundation in payroll operations, accounting support,
+        reporting and administrative processes. My work is guided by accuracy,
+        integrity, confidentiality and reliable service.
+      </p>
+
+      <div class="quote">
+        “Accuracy is more than a skill—it is a responsibility built on trust,
+        confidentiality and continuous learning.”
+      </div>
+
+      <div class="check-list">
+        <div class="check-item">
+          <span class="check">✓</span>
+          <span>Payroll processing, deductions, commissions and compliance support</span>
+        </div>
+
+        <div class="check-item">
+          <span class="check">✓</span>
+          <span>Financial reporting, dashboards, tracking and data analysis</span>
+        </div>
+
+        <div class="check-item">
+          <span class="check">✓</span>
+          <span>Reconciliation, documentation and audit-ready processes</span>
+        </div>
+
+        <div class="check-item">
+          <span class="check">✓</span>
+          <span>Workflow development, SOPs and process improvement</span>
+        </div>
+      </div>
+
+      <div class="values">
+        <span class="value-pill">Accuracy</span>
+        <span class="value-pill">Confidentiality</span>
+        <span class="value-pill">Integrity</span>
+        <span class="value-pill">Continuous Learning</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="journey" class="section section-soft">
+  <div class="section-heading fade">
+    <div class="eyebrow">Professional Journey</div>
+    <h2>Experience Built Step by Step</h2>
+    <p>
+      Career development across accounting, administration, brokerage operations
+      and payroll.
+    </p>
+  </div>
+
+  <div class="journey">
+    <div class="timeline-item fade">
+      <div class="timeline-year">2014–2020</div>
+      <div class="timeline-card">
+        <h3>Accountant & Administrator</h3>
+        <p>Accounting records, bookkeeping, taxation support, reconciliation and audit documentation.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item fade">
+      <div class="timeline-year">2021–2023</div>
+      <div class="timeline-card">
+        <h3>Front Desk Administrator</h3>
+        <p>Brokerage administration, document control, scheduling, records and reporting support.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item fade">
+      <div class="timeline-year">2024</div>
+      <div class="timeline-card">
+        <h3>Payroll Associate</h3>
+        <p>Weekly payroll, timesheet and mileage verification, deductions and payroll reconciliation.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item fade">
+      <div class="timeline-year">2024–2026</div>
+      <div class="timeline-card">
+        <h3>Deals Administrator</h3>
+        <p>Payroll support, commission processing, deal reconciliation, AP, AR and statutory documentation.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item fade">
+      <div class="timeline-year">Current</div>
+      <div class="timeline-card">
+        <h3>Payroll Administrator</h3>
+        <p>Payroll and commission administration, reporting, discrepancy resolution and workflow coordination.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <div class="section-heading fade">
+    <div class="eyebrow">Core Competencies</div>
+    <h2>Skills Supporting Reliable Results</h2>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-card fade">
+      <div class="skill-icon">▣</div>
+      <h3>Payroll Administration</h3>
+      <p>Payroll review, earnings, deductions, commissions, ROEs and year-end support.</p>
+    </div>
+
+    <div class="skill-card fade">
+      <div class="skill-icon">∑</div>
+      <h3>Excel Reporting</h3>
+      <p>PivotTables, XLOOKUP, IF functions, SUMIFS, dashboards and tracking tools.</p>
+    </div>
+
+    <div class="skill-card fade">
+      <div class="skill-icon">↻</div>
+      <h3>Reconciliation</h3>
+      <p>Payroll, bank, trust, ledger and account reconciliation support.</p>
+    </div>
+
+    <div class="skill-card fade">
+      <div class="skill-icon">✓</div>
+      <h3>Compliance</h3>
+      <p>Confidential records, statutory reporting, documentation and audit readiness.</p>
+    </div>
+
+    <div class="skill-card fade">
+      <div class="skill-icon">$</div>
+      <h3>Accounting Operations</h3>
+      <p>AP, AR, bookkeeping, EFT, cheque processing and general-ledger support.</p>
+    </div>
+
+    <div class="skill-card fade">
+      <div class="skill-icon">▤</div>
+      <h3>Financial Reporting</h3>
+      <p>Payroll summaries, expense reports, liability schedules and management reports.</p>
+    </div>
+
+    <div class="skill-card fade">
+      <div class="skill-icon">⚙</div>
+      <h3>Process Improvement</h3>
+      <p>SOPs, checklists, workflow development and structured review controls.</p>
+    </div>
+
+    <div class="skill-card fade">
+      <div class="skill-icon">◇</div>
+      <h3>Professional Support</h3>
+      <p>Team coordination, communication, records management and customer service.</p>
+    </div>
+  </div>
+</section>
+
+<section id="tools" class="section section-soft">
+  <div class="section-heading fade">
+    <div class="eyebrow">Professional Tools & Software</div>
+    <<h2>Professional Tools & Software</h2>
+    <p>
+      Experienced with modern payroll, accounting, Microsoft Office and business software used in today's Canadian workplaces. Strong technical foundation with the ability to quickly learn new systems and technologies.
+    </p>
+  </div>
+
+  <div class="tools-grid">
+    <div class="tool-card fade">
+      <div class="tool-icon">QB</div>
+      <h3>Payroll & Accounting Systems</h3>
+      <ul>
+        <li>QuickBooks</li>
+        <li>Lone Wolf</li>
+        <li>Payroll and commission systems</li>
+        <li>Bookkeeping and ledger support</li>
+      </ul>
+      <span class="level">Experienced</span>
+    </div>
+
+    <div class="tool-card fade">
+      <div class="tool-icon">X</div>
+      <h3>Microsoft Excel</h3>
+      <ul>
+        <li>PivotTables and PivotCharts</li>
+        <li>XLOOKUP and VLOOKUP</li>
+        <li>IF, SUMIFS and COUNTIFS</li>
+        <li>Validation and conditional formatting</li>
+<li>Basic Financial Reporting</li>
+      </ul>
+      <span class="level">Experienced</span>
+    </div>
+
+    <div class="tool-card fade">
+      <div class="tool-icon">365</div>
+      <h3>Microsoft 365</h3>
+      <ul>
+        <li>Word and document preparation</li>
+        <li>Outlook and email management</li>
+        <li>Teams collaboration</li>
+        <li>Calendar and meeting coordination</li>
+      </ul>
+      <span class="level">Experienced</span>
+    </div>
+
+    <div class="tool-card fade">
+      <div class="tool-icon">PDF</div>
+      <h3>Documents & Administration</h3>
+      <ul>
+        <li>Adobe Acrobat and PDF preparation</li>
+        <li>Document control</li>
+        <li>Digital records management</li>
+        <li>SOPs and process maps</li>
+      </ul>
+      <span class="level">Working Knowledge</span>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="section">
+  <div class="section-heading fade">
+    <div class="eyebrow">Featured Work</div>
+    <h2>Realistic, Clickable Payroll Samples</h2>
+    <p>
+      Open each project to explore a fictional payroll scenario, calculations,
+      reports, controls and business value.
+    </p>
+  </div>
+
+  <div class="project-grid">
+
+    <article class="project-card fade">
+      <div class="project-preview">
+        <div class="project-preview-inner">
+          <div class="project-kpis">
+            <div class="project-kpi">Payroll<br><strong>$412,750</strong></div>
+            <div class="project-kpi">Employees<br><strong>154</strong></div>
+            <div class="project-kpi">Accuracy<br><strong>99.6%</strong></div>
+          </div>
+          <div class="preview-bars">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-body">
+        <h3>Payroll Dashboard & KPI Reporting</h3>
+        <p>Executive dashboard for payroll costs, deductions, overtime, exceptions and department reporting.</p>
+        <div class="tags">
+          <span class="tag">Excel</span>
+          <span class="tag">PivotTables</span>
+          <span class="tag">KPIs</span>
+        </div>
+        <button class="project-open" data-project="dashboard">View Interactive Sample →</button>
+      </div>
+    </article>
+
+    <article class="project-card fade">
+      <div class="project-preview">
+        <div class="project-preview-inner">
+          <table class="preview-table">
+            <thead>
+              <tr><th>Employee</th><th>Exception</th><th>Priority</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>E-1001</td><td>Missing approval</td><td><span class="status high">High</span></td><td><span class="status done">Done</span></td></tr>
+              <tr><td>E-1002</td><td>Duplicate hours</td><td>Medium</td><td>Corrected</td></tr>
+              <tr><td>E-1003</td><td>Missing bank info</td><td><span class="status high">High</span></td><td>Pending</td></tr>
+              <tr><td>E-1004</td><td>Vacation variance</td><td>Low</td><td><span class="status done">Done</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="project-body">
+        <h3>Payroll Exception Management</h3>
+        <p>Review system for missing approvals, duplicate entries, overtime anomalies and incomplete records.</p>
+        <div class="tags">
+          <span class="tag">Quality Control</span>
+          <span class="tag">Compliance</span>
+          <span class="tag">Review</span>
+        </div>
+        <button class="project-open" data-project="exceptions">View Interactive Sample →</button>
+      </div>
+    </article>
+
+    <article class="project-card fade">
+      <div class="project-preview">
+        <div class="project-preview-inner">
+          <div class="recon-grid">
+            <div class="recon-table">
+              <div class="recon-line"><span>Gross Pay</span><strong>$587,432</strong></div>
+              <div class="recon-line"><span>Deductions</span><strong>($174,681)</strong></div>
+              <div class="recon-line"><span>Net Pay</span><strong>$354,501</strong></div>
+              <div class="recon-line"><span>Vacation Accrual</span><strong>$23,150</strong></div>
+              <div class="recon-line"><span>Variance</span><strong>$0.00</strong></div>
+            </div>
+            <div class="recon-score"><strong>100%</strong><span>Reconciled</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-body">
+        <h3>Payroll Reconciliation</h3>
+        <p>Comparison of payroll-system totals with accounting records and documented variance checks.</p>
+        <div class="tags">
+          <span class="tag">Reconciliation</span>
+          <span class="tag">Audit Support</span>
+          <span class="tag">Controls</span>
+        </div>
+        <button class="project-open" data-project="reconciliation">View Interactive Sample →</button>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="privacy-note fade">
+    <strong>Confidentiality notice:</strong>
+    Every employee name, ID, date, amount and business scenario in these samples
+    is fictional and created solely to demonstrate payroll and reporting skills.
+  </div>
+</section>
+
+<section id="development" class="section section-dark">
+  <div class="section-heading fade">
+    <div class="eyebrow">Professional Development</div>
+    <h2>Committed to Continuous Growth</h2>
+    <p>
+      Select privacy-safe screenshots showing only your name, issuer, course title
+      and completion year or status.
+    </p>
+  </div>
+
+  <div class="credentials-grid">
+
+    <article class="credential-card fade">
+      <div class="credential-image" id="cred-pcl-stage">
+        <img id="cred-pcl-image" alt="Payroll Compliance Legislation safe preview">
+        <div class="credential-placeholder">
+          <div class="credential-mark">NPI</div>
+          <strong>Payroll Compliance Legislation</strong>
+        </div>
+      </div>
+      <h3>Payroll Compliance Legislation</h3>
+      <div class="issuer">National Payroll Institute</div>
+      <p>Completed. Personal address, NPI number and grade should remain hidden.</p>
+      <div class="credential-controls">
+        <button class="add-preview" data-upload="cred-pcl">Add Safe Preview</button>
+        <button class="remove-preview" data-remove="cred-pcl">Remove</button>
+      </div>
+    </article>
+
+    <article class="credential-card fade">
+      <div class="credential-image" id="cred-pf1-stage">
+        <img id="cred-pf1-image" alt="Payroll Fundamentals I safe preview">
+        <div class="credential-placeholder">
+          <div class="credential-mark">NPI</div>
+          <strong>Payroll Fundamentals I</strong>
+        </div>
+      </div>
+      <h3>Payroll Fundamentals I</h3>
+      <div class="issuer">National Payroll Institute</div>
+      <p>Completed. Only course, issuer, name and status should remain visible.</p>
+      <div class="credential-controls">
+        <button class="add-preview" data-upload="cred-pf1">Add Safe Preview</button>
+        <button class="remove-preview" data-remove="cred-pf1">Remove</button>
+      </div>
+    </article>
+
+    <article class="credential-card fade">
+      <div class="credential-image" id="cred-intuit-stage">
+        <img id="cred-intuit-image" alt="Intuit Bookkeeping safe preview">
+        <div class="credential-placeholder">
+          <div class="credential-mark">INT</div>
+          <strong>Intuit Bookkeeping</strong>
+        </div>
+      </div>
+      <h3>Bookkeeping Certification</h3>
+      <div class="issuer">Intuit</div>
+      <p>Professional development in bookkeeping and accounting foundations.</p>
+      <div class="credential-controls">
+        <button class="add-preview" data-upload="cred-intuit">Add Safe Preview</button>
+        <button class="remove-preview" data-remove="cred-intuit">Remove</button>
+      </div>
+    </article>
+
+    <article class="credential-card fade">
+      <div class="credential-image" id="cred-tax-stage">
+        <img id="cred-tax-image" alt="Intuit Tax Level 1 safe preview">
+        <div class="credential-placeholder">
+          <div class="credential-mark">TAX</div>
+          <strong>Intuit Tax Level 1</strong>
+        </div>
+      </div>
+      <h3>Tax Level 1</h3>
+      <div class="issuer">Intuit Academy</div>
+      <p>Learning focused on Canadian tax concepts and professional practice.</p>
+      <div class="credential-controls">
+        <button class="add-preview" data-upload="cred-tax">Add Safe Preview</button>
+        <button class="remove-preview" data-remove="cred-tax">Remove</button>
+      </div>
+    </article>
+
+    <article class="credential-card fade">
+      <div class="credential-image" id="cred-linkedin-stage">
+        <img id="cred-linkedin-image" alt="LinkedIn Learning safe preview">
+        <div class="credential-placeholder">
+          <div class="credential-mark">in</div>
+          <strong>LinkedIn Learning</strong>
+        </div>
+      </div>
+      <h3>Continuous Learning</h3>
+      <div class="issuer">LinkedIn Learning</div>
+      <p>QuickBooks, payroll, bookkeeping, finance, cash flow and leadership courses.</p>
+      <div class="credential-controls">
+        <button class="add-preview" data-upload="cred-linkedin">Add Safe Preview</button>
+        <button class="remove-preview" data-remove="cred-linkedin">Remove</button>
+      </div>
+    </article>
+
+      </div>
+</section>
+
+<section id="education" class="section">
+  <div class="section-heading fade">
+    <div class="eyebrow">Education</div>
+    <h2>Academic Qualifications</h2>
+    <p>
+      Add cropped document previews showing only your name, institution,
+      qualification and completion year.
+    </p>
+  </div>
+
+  <div class="education-grid">
+
+    <article class="education-card fade">
+      <div class="education-preview" id="edu-bcom-stage">
+        <img id="edu-bcom-image" alt="Bachelor of Commerce safe credential preview">
+        <div class="education-placeholder">
+          <div class="doc-seal">PU</div>
+          <strong>Bachelor of Commerce</strong>
+          <small>Panjab University<br>Completed 2014</small>
+        </div>
+      </div>
+
+      <h3>Bachelor of Commerce</h3>
+      <div class="school">Panjab University, India</div>
+      <p>
+        Completed in 2014 with a major in Business Administration.
+        WES-assessed Canadian equivalency: four-year bachelor’s degree.
+      </p>
+
+      <div class="credential-controls">
+        <button class="add-preview" data-upload="edu-bcom">Add Safe Preview</button>
+        <button class="remove-preview" data-remove="edu-bcom">Remove</button>
+      </div>
+    </article>
+
+    <article class="education-card fade">
+      <div class="education-preview" id="edu-lambton-stage">
+        <img id="edu-lambton-image" alt="Lambton College safe credential preview">
+        <div class="education-placeholder">
+          <div class="doc-seal">LC</div>
+          <strong>Ontario Graduate Certificate</strong>
+          <small>Advanced Project Management & Strategic Leadership<br>Completed 2022</small>
+        </div>
+      </div>
+
+      <h3>Advanced Project Management & Strategic Leadership</h3>
+      <div class="school">Lambton College, Ontario</div>
+      <p>
+        Ontario Graduate Certificate completed in April 2022, with learning in
+        planning, leadership, risk and operational improvement.
+      </p>
+
+      <div class="credential-controls">
+        <button class="add-preview" data-upload="edu-lambton">Add Safe Preview</button>
+        <button class="remove-preview" data-remove="edu-lambton">Remove</button>
+      </div>
+    </article>
+
+  </div>
+</section>
+<section id="technical-skills" class="section">
+
+<div class="section-heading fade">
+<div class="eyebrow">Technical Skills</div>
+<h2>Tools & Software</h2>
+
+<p>
+Proficient with modern payroll, accounting, office productivity and collaboration tools used in today's Canadian workplaces.
+</p>
+</div>
+
+<div class="skills-grid">
+
+<div class="skill-card fade">
+<h3>Payroll & Accounting</h3>
+<ul>
+<li>QuickBooks Online</li>
+<li>QuickBooks Desktop</li>
+<li>Payroll Administration</li>
+<li>Bookkeeping</li>
+<li>Accounts Payable</li>
+<li>Accounts Receivable</li>
+<li>Bank Reconciliation</li>
+<li>Journal Entries</li>
+<li>Financial Reporting</li>
+</ul>
+</div>
+
+<div class="skill-card fade">
+<h3>Microsoft & Office</h3>
+<ul>
+<li>Microsoft Excel</li>
+<li>Microsoft Word</li>
+<li>Microsoft Outlook</li>
+<li>Microsoft Teams</li>
+<li>Adobe Acrobat</li>
+<li>Google Workspace</li>
+<li>Email Management</li>
+<li>Document Management</li>
+</ul>
+</div>
+
+<div class="skill-card fade">
+<h3>Professional Strengths</h3>
+<ul>
+<li>Attention to Detail</li>
+<li>Process Improvement</li>
+<li>Payroll Compliance</li>
+<li>Data Accuracy</li>
+<li>Problem Solving</li>
+<li>Communication</li>
+<li>Fast Learner</li>
+<li>Team Collaboration</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+<section id="contact" class="contact">
+  <div class="contact-grid">
+    <div class="fade">
+      <div class="eyebrow">Let’s Connect</div>
+      <h2>Interested in discussing an opportunity?</h2>
+      <p>
+        Thank you for exploring my portfolio. I welcome professional conversations
+        regarding payroll, accounting, reporting and administrative opportunities.
+      </p>
+    </div>
+
+    <div class="contact-panel fade">
+      <strong>Professional contact</strong>
+      <a class="contact-link"
+         href="https://linkedin.com/in/prabhjot-kaur-178330121"
+         target="_blank"
+         rel="noopener noreferrer">
+        <span>Connect on LinkedIn</span>
+        <span>↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="brand">
+    <div class="pk-logo">PK</div>
+    <div>
+      <div class="brand-name">Prabhjot Kaur</div>
+      <div class="brand-subtitle">Payroll • Accounting • Reporting</div>
+    </div>
+  </div>
+  <div>© 2026 Prabhjot Kaur. All rights reserved.</div>
+</footer>
+
+<div class="modal" id="projectModal" aria-hidden="true">
+  <div class="modal-dialog" role="dialog" aria-modal="true">
+    <div class="modal-top">
+      <h3 id="modalTitle">Project Sample</h3>
+      <button class="modal-close" id="modalClose" aria-label="Close project">×</button>
+    </div>
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+</div>
+
+<input class="hidden-input" id="dynamicFileInput" type="file" accept="image/*">
+
+<script>
+const projectData = {
+  dashboard: {
+    title: "Payroll Dashboard & KPI Reporting",
+    sample: `
+      <div class="full-dashboard">
+        <div class="full-dashboard-title">PAYROLL DASHBOARD — MONTHLY OVERVIEW</div>
+        <div class="full-kpis">
+          <div class="full-kpi"><strong>$412,750.82</strong><span>Total Payroll</span></div>
+          <div class="full-kpi"><strong>$354,500.96</strong><span>Net Pay</span></div>
+          <div class="full-kpi"><strong>154</strong><span>Total Employees</span></div>
+          <div class="full-kpi"><strong>99.6%</strong><span>Payroll Accuracy</span></div>
+        </div>
+
+        <div class="full-charts">
+          <div class="chart-panel">
+            <strong>Monthly Net-Pay Trend</strong>
+            <div class="chart-bars">
+              <div></div><div></div><div></div><div></div><div></div><div></div>
+            </div>
+          </div>
+
+          <div class="chart-panel">
+            <strong>Department Summary</strong>
+            <table class="big-table" style="margin-top:15px">
+              <thead>
+                <tr><th>Department</th><th>Employees</th><th>Net Pay</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Sales</td><td>48</td><td>$98,500</td></tr>
+                <tr><td>Operations</td><td>42</td><td>$91,250</td></tr>
+                <tr><td>Administration</td><td>31</td><td>$64,800</td></tr>
+                <tr><td>Finance</td><td>18</td><td>$51,600</td></tr>
+                <tr><td>Marketing</td><td>15</td><td>$48,351</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    `,
+    sidebar: `
+      <h4>Sample Overview</h4>
+      <ul>
+        <li>Fictional monthly payroll dataset</li>
+        <li>154 sample employees</li>
+        <li>Six-month payroll trend</li>
+        <li>Department cost analysis</li>
+        <li>Accuracy and exception KPIs</li>
+      </ul>
+    `,
+    blocks: [
+      ["Business Objective","Create a clear management view of payroll totals, deductions, headcount, overtime, department costs and accuracy."],
+      ["Tools Demonstrated","Microsoft Excel, PivotTables, PivotCharts, SUMIFS, COUNTIFS and conditional formatting."],
+      ["Business Value","Supports faster payroll review and highlights unusual results before approval."]
+    ]
+  },
+
+  exceptions: {
+    title: "Payroll Exception Management",
+    sample: `
+      <div class="full-dashboard">
+        <div class="full-dashboard-title">PAYROLL EXCEPTION REPORT</div>
+
+        <div class="full-kpis">
+          <div class="full-kpi"><strong>154</strong><span>Total Employees</span></div>
+          <div class="full-kpi"><strong>7</strong><span>Total Exceptions</span></div>
+          <div class="full-kpi"><strong>3</strong><span>High Priority</span></div>
+          <div class="full-kpi"><strong>5</strong><span>Resolved</span></div>
+        </div>
+
+        <div style="padding:0 14px 14px">
+          <table class="big-table">
+            <thead>
+              <tr>
+                <th>Employee ID</th><th>Department</th><th>Exception</th>
+                <th>Priority</th><th>Status</th><th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>E-1001</td><td>Sales</td><td>Missing overtime approval</td><td>High</td><td>Completed</td><td>Approval received</td></tr>
+              <tr><td>E-1002</td><td>Operations</td><td>Duplicate hours</td><td>Medium</td><td>Corrected</td><td>Entry removed</td></tr>
+              <tr><td>E-1003</td><td>Administration</td><td>Missing banking information</td><td>High</td><td>Pending</td><td>Employee contacted</td></tr>
+              <tr><td>E-1004</td><td>Marketing</td><td>Incorrect vacation hours</td><td>Low</td><td>Completed</td><td>Balance corrected</td></tr>
+              <tr><td>E-1005</td><td>Finance</td><td>Holiday pay not applied</td><td>Medium</td><td>Corrected</td><td>Policy applied</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    `,
+    sidebar: `
+      <h4>Review Controls</h4>
+      <ul>
+        <li>Priority classification</li>
+        <li>Resolution tracking</li>
+        <li>Approval follow-up</li>
+        <li>Duplicate-entry review</li>
+        <li>Exception ownership</li>
+      </ul>
+    `,
+    blocks: [
+      ["Business Objective","Identify payroll risks before processing and document corrections, approvals and unresolved items."],
+      ["Review Process","Validate inputs, classify risk, assign action steps, correct errors and document completion."],
+      ["Business Value","Reduces preventable errors and creates a clear review trail."]
+    ]
+  },
+
+  reconciliation: {
+    title: "Payroll Reconciliation",
+    sample: `
+      <div class="full-dashboard">
+        <div class="full-dashboard-title">MONTHLY PAYROLL RECONCILIATION SUMMARY</div>
+
+        <div class="full-kpis">
+          <div class="full-kpi"><strong>$412,750.82</strong><span>Total Payroll</span></div>
+          <div class="full-kpi"><strong>$412,750.82</strong><span>Reconciled Amount</span></div>
+          <div class="full-kpi"><strong>$0.00</strong><span>Variance</span></div>
+          <div class="full-kpi"><strong>100%</strong><span>Reconciled</span></div>
+        </div>
+
+        <div style="padding:0 14px 14px">
+          <table class="big-table">
+            <thead>
+              <tr>
+                <th>Description</th><th>Payroll System</th><th>General Ledger</th>
+                <th>Variance</th><th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Gross Pay</td><td>$587,432.40</td><td>$587,432.40</td><td>$0.00</td><td>Matched</td></tr>
+              <tr><td>Employee Deductions</td><td>($174,681.32)</td><td>($174,681.32)</td><td>$0.00</td><td>CPP, EI and tax verified</td></tr>
+              <tr><td>Employer Remittances</td><td>($58,250.12)</td><td>($58,250.12)</td><td>$0.00</td><td>Confirmed</td></tr>
+              <tr><td>Net Pay</td><td>$354,500.96</td><td>$354,500.96</td><td>$0.00</td><td>Matched</td></tr>
+              <tr><td>Vacation Accrual</td><td>$23,150.45</td><td>$23,150.45</td><td>$0.00</td><td>Recorded</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    `,
+    sidebar: `
+      <h4>Reconciliation Checks</h4>
+      <ul>
+        <li>Payroll register totals</li>
+        <li>General-ledger comparison</li>
+        <li>Deductions and remittances</li>
+        <li>Vacation accruals</li>
+        <li>Variance documentation</li>
+      </ul>
+    `,
+    blocks: [
+      ["Business Objective","Confirm that payroll-system results agree with the general ledger and payroll liabilities."],
+      ["Reconciliation Method","Compare gross pay, deductions, remittances, net pay and accruals, then document differences."],
+      ["Business Value","Improves financial accuracy, audit readiness and posting controls."]
+    ]
+  }
+};
+
+const modal = document.getElementById("projectModal");
+const modalTitle = document.getElementById("modalTitle");
+const modalContent = document.getElementById("modalContent");
+const modalClose = document.getElementById("modalClose");
+
+document.querySelectorAll(".project-open").forEach(button => {
+  button.addEventListener("click", () => {
+    const project = projectData[button.dataset.project];
+    if (!project) return;
+
+    modalTitle.textContent = project.title;
+
+    modalContent.innerHTML = `
+      <div class="case-hero">
+        <div class="case-sample">${project.sample}</div>
+        <aside class="case-sidebar">${project.sidebar}</aside>
+      </div>
+
+      <div class="case-grid">
+        ${project.blocks.map(block => `
+          <div class="case-block">
+            <h4>${block[0]}</h4>
+            <p>${block[1]}</p>
+          </div>
+        `).join("")}
+      </div>
+
+      <div class="privacy-note">
+        <strong>Privacy:</strong>
+        This case study uses fictional employees, fictional identifiers and fictional payroll values.
+      </div>
+    `;
+
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden","false");
+    document.body.classList.add("modal-open");
+  });
+});
+
+function closeModal(){
+  modal.classList.remove("open");
+  modal.setAttribute("aria-hidden","true");
+  document.body.classList.remove("modal-open");
+}
+
+modalClose.addEventListener("click", closeModal);
+
+modal.addEventListener("click", event => {
+  if (event.target === modal) closeModal();
+});
+
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") closeModal();
+});
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting){
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    }
+  });
+},{threshold:.12});
+
+document.querySelectorAll(".fade").forEach(element => observer.observe(element));
+
+const fileInput = document.getElementById("dynamicFileInput");
+let activeImageKey = "";
+
+const imageSlots = [
+  "portrait",
+  "cred-pcl",
+  "cred-pf1",
+  "cred-intuit",
+  "cred-tax",
+  "cred-linkedin",
+  "cred-pm",
+  "edu-bcom",
+  "edu-lambton"
+];
+
+function getStage(key){
+  if (key === "portrait") return document.getElementById("portraitStage");
+  return document.getElementById(`${key}-stage`);
+}
+
+function getImage(key){
+  if (key === "portrait") return document.getElementById("portraitImage");
+  return document.getElementById(`${key}-image`);
+}
+
+function displayStoredImage(key){
+  const storedImage = localStorage.getItem(`pkPortfolio:${key}`);
+  const stage = getStage(key);
+  const image = getImage(key);
+
+  if (!stage || !image) return;
+
+  if (storedImage){
+    image.src = storedImage;
+    stage.classList.add("has-image");
+  } else {
+    image.removeAttribute("src");
+    stage.classList.remove("has-image");
+  }
+}
+
+imageSlots.forEach(displayStoredImage);
+
+document.querySelectorAll("[data-upload]").forEach(button => {
+  button.addEventListener("click", () => {
+    activeImageKey = button.dataset.upload;
+    fileInput.value = "";
+    fileInput.click();
+  });
+});
+
+fileInput.addEventListener("change", () => {
+  const file = fileInput.files && fileInput.files[0];
+  if (!file || !activeImageKey) return;
+
+  if (!file.type.startsWith("image/")){
+    alert("Please select an image file.");
+    return;
+  }
+
+  const reader = new FileReader();
+
+  reader.onload = event => {
+    const imageData = event.target.result;
+
+    try{
+      localStorage.setItem(`pkPortfolio:${activeImageKey}`, imageData);
+      displayStoredImage(activeImageKey);
+    } catch(error){
+      alert("This image is too large for browser storage. Choose a smaller screenshot or crop it first.");
+    }
+  };
+
+  reader.onerror = () => {
+    alert("The image could not be read. Please choose a different image.");
+  };
+
+  reader.readAsDataURL(file);
+});
+
+document.querySelectorAll("[data-remove]").forEach(button => {
+  button.addEventListener("click", () => {
+    const key = button.dataset.remove;
+    localStorage.removeItem(`pkPortfolio:${key}`);
+    displayStoredImage(key);
+  });
+});
+</script>
+
+</body>
+</html>
