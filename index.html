@@ -1570,15 +1570,10 @@ footer{
         <div class="portrait-placeholder">
           <div class="pk-logo">PK</div>
           <strong>Professional Portrait</strong>
-          <p>Select the orange-top photograph with the plain white background.</p>
+          <p>Professional portrait</p>
         </div>
       </div>
-
-      <div class="upload-row">
-        <button class="upload-button" data-upload="portrait">Add Portrait</button>
-        <button class="remove-button" data-remove="portrait">Remove</button>
-      </div>
-    </div>
+</div>
 
     <div class="about-copy fade">
       <div class="eyebrow">About Me</div>
@@ -1740,7 +1735,7 @@ footer{
 <section id="tools" class="section section-soft">
   <div class="section-heading fade">
     <div class="eyebrow">Professional Tools & Software</div>
-    <<h2>Professional Tools & Software</h2>
+    <h2>Professional Tools & Software</h2>
     <p>
       Experienced with modern payroll, accounting, Microsoft Office and business software used in today's Canadian workplaces. Strong technical foundation with the ability to quickly learn new systems and technologies.
     </p>
@@ -1907,8 +1902,7 @@ footer{
     <div class="eyebrow">Professional Development</div>
     <h2>Committed to Continuous Growth</h2>
     <p>
-      Select privacy-safe screenshots showing only your name, issuer, course title
-      and completion year or status.
+      Selected credentials and professional-development achievements.
     </p>
   </div>
 
@@ -1925,11 +1919,7 @@ footer{
       <h3>Payroll Compliance Legislation</h3>
       <div class="issuer">National Payroll Institute</div>
       <p>Completed. Personal address, NPI number and grade should remain hidden.</p>
-      <div class="credential-controls">
-        <button class="add-preview" data-upload="cred-pcl">Add Safe Preview</button>
-        <button class="remove-preview" data-remove="cred-pcl">Remove</button>
-      </div>
-    </article>
+</article>
 
     <article class="credential-card fade">
       <div class="credential-image" id="cred-pf1-stage">
@@ -1942,11 +1932,7 @@ footer{
       <h3>Payroll Fundamentals I</h3>
       <div class="issuer">National Payroll Institute</div>
       <p>Completed. Only course, issuer, name and status should remain visible.</p>
-      <div class="credential-controls">
-        <button class="add-preview" data-upload="cred-pf1">Add Safe Preview</button>
-        <button class="remove-preview" data-remove="cred-pf1">Remove</button>
-      </div>
-    </article>
+</article>
 
     <article class="credential-card fade">
       <div class="credential-image" id="cred-intuit-stage">
@@ -1959,11 +1945,7 @@ footer{
       <h3>Bookkeeping Certification</h3>
       <div class="issuer">Intuit</div>
       <p>Professional development in bookkeeping and accounting foundations.</p>
-      <div class="credential-controls">
-        <button class="add-preview" data-upload="cred-intuit">Add Safe Preview</button>
-        <button class="remove-preview" data-remove="cred-intuit">Remove</button>
-      </div>
-    </article>
+</article>
 
     <article class="credential-card fade">
       <div class="credential-image" id="cred-tax-stage">
@@ -1976,11 +1958,7 @@ footer{
       <h3>Tax Level 1</h3>
       <div class="issuer">Intuit Academy</div>
       <p>Learning focused on Canadian tax concepts and professional practice.</p>
-      <div class="credential-controls">
-        <button class="add-preview" data-upload="cred-tax">Add Safe Preview</button>
-        <button class="remove-preview" data-remove="cred-tax">Remove</button>
-      </div>
-    </article>
+</article>
 
     <article class="credential-card fade">
       <div class="credential-image" id="cred-linkedin-stage">
@@ -1993,11 +1971,7 @@ footer{
       <h3>Continuous Learning</h3>
       <div class="issuer">LinkedIn Learning</div>
       <p>QuickBooks, payroll, bookkeeping, finance, cash flow and leadership courses.</p>
-      <div class="credential-controls">
-        <button class="add-preview" data-upload="cred-linkedin">Add Safe Preview</button>
-        <button class="remove-preview" data-remove="cred-linkedin">Remove</button>
-      </div>
-    </article>
+</article>
 
       </div>
 </section>
@@ -2030,12 +2004,7 @@ footer{
         Completed in 2014 with a major in Business Administration.
         WES-assessed Canadian equivalency: four-year bachelor’s degree.
       </p>
-
-      <div class="credential-controls">
-        <button class="add-preview" data-upload="edu-bcom">Add Safe Preview</button>
-        <button class="remove-preview" data-remove="edu-bcom">Remove</button>
-      </div>
-    </article>
+</article>
 
     <article class="education-card fade">
       <div class="education-preview" id="edu-lambton-stage">
@@ -2053,12 +2022,7 @@ footer{
         Ontario Graduate Certificate completed in April 2022, with learning in
         planning, leadership, risk and operational improvement.
       </p>
-
-      <div class="credential-controls">
-        <button class="add-preview" data-upload="edu-lambton">Add Safe Preview</button>
-        <button class="remove-preview" data-remove="edu-lambton">Remove</button>
-      </div>
-    </article>
+</article>
 
   </div>
 </section>
@@ -2165,9 +2129,6 @@ Proficient with modern payroll, accounting, office productivity and collaboratio
     <div class="modal-content" id="modalContent"></div>
   </div>
 </div>
-
-<input class="hidden-input" id="dynamicFileInput" type="file" accept="image/*">
-
 <script>
 const projectData = {
   dashboard: {
@@ -2390,93 +2351,6 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll(".fade").forEach(element => observer.observe(element));
 
-const fileInput = document.getElementById("dynamicFileInput");
-let activeImageKey = "";
-
-const imageSlots = [
-  "portrait",
-  "cred-pcl",
-  "cred-pf1",
-  "cred-intuit",
-  "cred-tax",
-  "cred-linkedin",
-  "cred-pm",
-  "edu-bcom",
-  "edu-lambton"
-];
-
-function getStage(key){
-  if (key === "portrait") return document.getElementById("portraitStage");
-  return document.getElementById(`${key}-stage`);
-}
-
-function getImage(key){
-  if (key === "portrait") return document.getElementById("portraitImage");
-  return document.getElementById(`${key}-image`);
-}
-
-function displayStoredImage(key){
-  const storedImage = localStorage.getItem(`pkPortfolio:${key}`);
-  const stage = getStage(key);
-  const image = getImage(key);
-
-  if (!stage || !image) return;
-
-  if (storedImage){
-    image.src = storedImage;
-    stage.classList.add("has-image");
-  } else {
-    image.removeAttribute("src");
-    stage.classList.remove("has-image");
-  }
-}
-
-imageSlots.forEach(displayStoredImage);
-
-document.querySelectorAll("[data-upload]").forEach(button => {
-  button.addEventListener("click", () => {
-    activeImageKey = button.dataset.upload;
-    fileInput.value = "";
-    fileInput.click();
-  });
-});
-
-fileInput.addEventListener("change", () => {
-  const file = fileInput.files && fileInput.files[0];
-  if (!file || !activeImageKey) return;
-
-  if (!file.type.startsWith("image/")){
-    alert("Please select an image file.");
-    return;
-  }
-
-  const reader = new FileReader();
-
-  reader.onload = event => {
-    const imageData = event.target.result;
-
-    try{
-      localStorage.setItem(`pkPortfolio:${activeImageKey}`, imageData);
-      displayStoredImage(activeImageKey);
-    } catch(error){
-      alert("This image is too large for browser storage. Choose a smaller screenshot or crop it first.");
-    }
-  };
-
-  reader.onerror = () => {
-    alert("The image could not be read. Please choose a different image.");
-  };
-
-  reader.readAsDataURL(file);
-});
-
-document.querySelectorAll("[data-remove]").forEach(button => {
-  button.addEventListener("click", () => {
-    const key = button.dataset.remove;
-    localStorage.removeItem(`pkPortfolio:${key}`);
-    displayStoredImage(key);
-  });
-});
 </script>
 
 </body>
